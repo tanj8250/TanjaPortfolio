@@ -249,10 +249,80 @@ a{
     color:var(--brand-quaternary);
     text-align: center;
 }
+/*styling af projektside slutter her*/
+
+/*styling af alle projektsiderne starter her*/
+
+/*rumrejsen*/
+.rum-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rumtekst{
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/*de swingende sko */
+.swing-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.swingtekst{
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/*Rhytme Studio*/
+.rhythm-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.rhythmtekst{
+    padding: 20px;
+    margin-top: 0%;
+}
+
+/*styling af goeasy del1*/
+
+.fgoeasy-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.fgoeasytekst{
+    padding: 20px;
+}
+
+/*goeasy del 2*/
+.agoeasy-billede{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.agoeasytekst{
+    padding: 20px;
+}
+
+
+/*footer*/
 
 footer{
     background-color:var(--brand-primary);
     padding: 2px;
+    margin-top: 20px;
     text-align: center;
 }
 
