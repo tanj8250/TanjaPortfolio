@@ -148,6 +148,39 @@ a{
 
 .introtekst{
     padding: 30px;
+    padding-bottom: 0;
+}
+
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.kontakt h2{
+    text-align: center;
+    margin-bottom: 1.02rem;
+}
+
+.telefon{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+}
+
+.kontakt p{
+    padding-left: 15px;
+}
+
+footer{
+    background-color:var(--brand-primary);
+    padding: 2px;
+    text-align: center;
 }
 
 /*media queries starter her*/
