@@ -130,6 +130,7 @@ a{
     float: left;
 }
 
+/*styling af om mig side*/
 .mig{
     background-image: url(./images/mig.jpeg);
     background-size: cover;
@@ -185,6 +186,68 @@ a{
     margin-top: 0;
     box-shadow: 1px 1px 10px var(--brand-quaternary);
     
+}
+
+/*styling af projektside starter her*/
+
+.projekter img{
+    margin-bottom: 30px;
+}
+
+
+
+
+.rumrejse{
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px; 
+}
+
+.swing{
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px; 
+}
+
+.bollywood{
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px; 
+}
+
+.goeasy-første{
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px; 
+}
+
+.goeasy-anden{
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px; 
+}
+
+.swing img{
+    margin-bottom:5px;
+}
+
+.btn-projekter{
+    background-color: var(--brand-secondary);
+    border: solid 1px var(--brand-tertiary);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px var(--brand-quaternary);
+    display: block;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.projekter a{
+    color:var(--brand-quaternary);
+    text-align: center;
 }
 
 footer{
