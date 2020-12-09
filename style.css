@@ -22,7 +22,7 @@ a{
 .menu-bar{
     background-color:var(--brand-primary);
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
+    position: relative;
     width: 100%;
     z-index: 3;
 }
@@ -128,13 +128,26 @@ a{
 .menu-bar .logoR{
     display: block;
     float: left;
-
 }
 
 .mig{
-    padding: 15px;
-    
+    background-image: url(./images/mig.jpeg);
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
 
+.intro{
+    background: var(--brand-primary);
+    padding: 30px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.introtekst{
+    padding: 30px;
 }
 
 /*media queries starter her*/
