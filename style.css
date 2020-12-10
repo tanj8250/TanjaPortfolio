@@ -358,7 +358,25 @@ a{
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
-   
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Raleway, sans-serif;
+    font-style: italic;
+    font-size: x-small;
+    margin-top: 10px;
+    background-color: var(--brand-secondary);
+    padding: 5px;
+    border: solid 1px var(--brand-tertiary);
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 100px;
+    margin-left: 100px;
+    box-shadow: 1px 1px 3px var(--brand-quaternary);
+    border-radius: 5px;
 }
 
 .videotekst{
@@ -373,6 +391,14 @@ footer{
     background-color:var(--brand-primary);
     padding: 2px;
     margin-top: 20px;
+    text-align: center;
+    font-family: Raleway, sans-serif;
+}
+
+.footvideo{
+    background-color:var(--brand-primary);
+    padding: 2px;
+    margin-top: 70px;
     text-align: center;
     font-family: Raleway, sans-serif;
 }
