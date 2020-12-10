@@ -1,3 +1,4 @@
+/*import af fonte Raleway og Khand*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -15,10 +16,6 @@ body {
 
 }
 
-/*menu navigation*/
-
-/*farve på tekst*/
-
 .logoR {
     width: 50px;
     height: 50px;
@@ -28,6 +25,10 @@ a {
     color: #000000;
 }
 
+
+/*menu navigation*/
+
+/*farve på tekst*/
 .menu-bar {
     background-color: var(--brand-primary);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
@@ -142,6 +143,8 @@ a {
 }
 
 /*styling af om mig side*/
+
+/*billede*/
 .mig {
     background-image: url(./images/mig.jpeg);
     background-size: cover;
@@ -152,6 +155,7 @@ a {
     align-items: center;
 }
 
+/*billede tekst*/
 .intro {
     background: var(--brand-primary);
     padding: 30px;
@@ -160,12 +164,14 @@ a {
     font-family: khand, sans-serif;
 }
 
+/*om mig tekst*/
 .introtekst {
     padding: 30px;
     padding-bottom: 0;
     font-family: Raleway, sans-serif, regular;
 }
 
+/*kontakt*/
 .kontakt {
     display: flex;
     flex-direction: column;
@@ -223,21 +229,6 @@ a {
     align-items: center;
 }
 
-
-
-/*
-.linje{
-    font-family: Khand, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-
-.linje a {
-    color: var(--brand-quaternary);
-    text-align: center;
-}
-*/
-
 .projekter img {
     margin-bottom: 30px;
 }
@@ -246,53 +237,13 @@ a {
     box-shadow: 1px 1px 10px var(--brand-quaternary);
     padding: 20px;
     margin: 30px;
-
 }
-
-/*
-.rumrejse{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-    
-}
-
-.swing{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-}
-
-.bollywood{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-}
-
-.goeasy-første{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-}
-
-.goeasy-anden{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-}
-
-
-.video{
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    padding: 20px;
-    margin: 30px; 
-} */
 
 .swing img {
     margin-bottom: 5px;
 }
 
-
+/*knapper*/
 .btn-projekter {
     background-color: var(--brand-secondary);
     border: solid 1px var(--brand-tertiary);
@@ -393,6 +344,7 @@ a {
     margin-top: 35px;
 }
 
+/*knappen med linket til video*/
 .link {
     display: flex;
     flex-direction: row;
@@ -417,11 +369,12 @@ a {
     font-family: Raleway, sans-serif;
 }
 
-.videosamlet{
+.videosamlet {
     display: flex;
     flex-direction: column;
 }
 
+/*styling af projektsiderne slutter her*/
 
 /*footer*/
 
@@ -467,7 +420,6 @@ footer {
 
     .menu-bar ul a {
         padding: 20px;
-        font-weight: 50;
         font-size: 10px;
     }
 
@@ -541,7 +493,7 @@ footer {
         margin-top: 50px;
     }
 
-    .swing-billede{
+    .swing-billede {
         padding: 50px;
     }
 
@@ -569,7 +521,7 @@ footer {
         margin-top: 50px;
     }
 
-    .fgoeasy-billede{
+    .fgoeasy-billede {
         padding: 70px;
         width: 35%;
     }
@@ -586,13 +538,13 @@ footer {
         margin-top: 140px;
     }
 
-    .agoeasy-billede{
+    .agoeasy-billede {
         padding: 20px;
         width: 500px;
     }
 
     /*video billed, link og tekst justeret til media*/
-    .videosamlet{
+    .videosamlet {
         display: flex;
         flex-direction: row;
     }
@@ -609,19 +561,17 @@ footer {
         margin-top: 70px;
     }
 
-    .videobillede{
+    .videobillede {
         padding-top: 70px;
         width: 80%;
     }
-     
+
     /*footer*/
-    footer{
+    footer {
         margin-top: 150px;
     }
 
-    .footvideo{
+    .footvideo {
         margin-top: 210px;
     }
-
-
 }
