@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*defineret mine farver*/
 :root{
     --brand-primary:#EBCEC6;
@@ -42,6 +46,9 @@ a{
     padding: 20px;
     text-decoration: none;
     text-align: center;
+    font-family: Khand, sans-serif, bold;
+    font-weight: 500;
+    font-size: 40px;
 }
 
 /*hele menuen*/
@@ -145,11 +152,13 @@ a{
     padding: 30px;
     margin-top: 40px;
     text-align: center;
+    font-family: khand, sans-serif;
 }
 
 .introtekst{
     padding: 30px;
     padding-bottom: 0;
+    font-family: Raleway, sans-serif, regular;
 }
 
 .kontakt {
@@ -161,6 +170,7 @@ a{
 .kontakt h2{
     text-align: center;
     margin-bottom: 1.02rem;
+    font-family: khand, sans-serif, medium;
 }
 
 .telefon{
@@ -172,10 +182,12 @@ a{
 .mail {
     display: flex;
     flex-direction: row;
+    
 }
 
 .kontakt p{
     padding-left: 15px;
+    font-family: raleway, sans-serif, regular;
 }
 
 .infotekst{
@@ -184,23 +196,34 @@ a{
     margin: 30px; 
     padding: 15px;
     margin-top: 0;
-    box-shadow: 1px 1px 10px var(--brand-quaternary);
-    
+    box-shadow: 1px 1px 10px var(--brand-quaternary);   
+}
+
+.infotekst h2{
+    font-family: khand, sans-serif, medium;
+}
+
+.infotekst p{
+    font-family: Raleway, sans-serif, Regular;
 }
 
 /*styling af projektside starter her*/
+
+.projekter{
+    font-family: Khand, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
 
 .projekter img{
     margin-bottom: 30px;
 }
 
-
-
-
 .rumrejse{
     box-shadow: 1px 1px 10px var(--brand-quaternary);
     padding: 20px;
     margin: 30px; 
+    
 }
 
 .swing{
@@ -263,6 +286,7 @@ a{
 .rumtekst{
     padding: 20px;
     margin-top: 0%;
+    font-family: Raleway, sans-serif;
 }
 
 /*de swingende sko */
@@ -276,6 +300,7 @@ a{
 .swingtekst{
     padding: 20px;
     margin-top: 0%;
+    font-family: Raleway, sans-serif;
 }
 
 /*Rhytme Studio*/
@@ -289,6 +314,7 @@ a{
 .rhythmtekst{
     padding: 20px;
     margin-top: 0%;
+    font-family: Raleway, sans-serif;
 }
 
 /*styling af goeasy del1*/
@@ -302,6 +328,7 @@ a{
 
 .fgoeasytekst{
     padding: 20px;
+    font-family: Raleway, sans-serif;
 }
 
 /*goeasy del 2*/
@@ -314,6 +341,7 @@ a{
 
 .agoeasytekst{
     padding: 20px;
+    font-family: Raleway, sans-serif;
 }
 
 
@@ -324,6 +352,7 @@ footer{
     padding: 2px;
     margin-top: 20px;
     text-align: center;
+    font-family: Raleway, sans-serif;
 }
 
 /*media queries starter her*/
