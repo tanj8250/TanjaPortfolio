@@ -1,31 +1,36 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*defineret mine farver*/
-:root{
-    --brand-primary:#EBCEC6;
-    --brand-secondary:#C6C9C0;
-    --brand-tertiary:#A0AE97;
-    --brand-quaternary:#676360;
+:root {
+    --brand-primary: #EBCEC6;
+    --brand-secondary: #C6C9C0;
+    --brand-tertiary: #A0AE97;
+    --brand-quaternary: #676360;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    
+
 }
 
 /*menu navigation*/
 
 /*farve på tekst*/
-a{
+
+.logoR {
+    width: 50px;
+    height: 50px;
+}
+
+a {
     color: #000000;
 }
 
-.menu-bar{
-    background-color:var(--brand-primary);
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+.menu-bar {
+    background-color: var(--brand-primary);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
     position: relative;
     width: 100%;
     z-index: 3;
@@ -33,7 +38,7 @@ a{
 
 /*styling af udsende på skrift*/
 
-.menu-bar ul{
+.menu-bar ul {
     margin: 0;
     padding: 0%;
     list-style: none;
@@ -41,7 +46,7 @@ a{
     background-color: var(--brand-primary);
 }
 
-.menu-bar ul a{
+.menu-bar ul a {
     display: block;
     padding: 20px;
     text-decoration: none;
@@ -53,7 +58,7 @@ a{
 
 /*hele menuen*/
 
-.menu-bar .menu{
+.menu-bar .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -61,8 +66,8 @@ a{
 
 /*placering af burger menu icone*/
 
-.menu-bar .menu-icon{
-    
+.menu-bar .menu-icon {
+
     padding: 28px 20px;
     position: relative;
     float: right;
@@ -72,7 +77,7 @@ a{
 /*hamburger menu visuelt*/
 
 .menu-bar .menu-icon .nav-icon {
-    background-color:#000000;
+    background-color: #000000;
     display: block;
     height: 2px;
     width: 18px;
@@ -80,10 +85,10 @@ a{
     transition: background .2s ease-out;
 }
 
-.menu-bar .menu-icon .nav-icon:before{
+.menu-bar .menu-icon .nav-icon:before {
     background-color: #000000;
     content: "";
-    display:block;
+    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -91,10 +96,10 @@ a{
     top: 5px;
 }
 
-.menu-bar .menu-icon .nav-icon:after{
+.menu-bar .menu-icon .nav-icon:after {
     background-color: #000000;
     content: "";
-    display:block;
+    display: block;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -104,50 +109,50 @@ a{
 
 /*skjuler tjekbox*/
 
-.menu-bar .btn-menu{
+.menu-bar .btn-menu {
     display: none;
 }
 
 /*menuen folder ud og ind*/
 
-.menu-bar .btn-menu:checked ~ .menu{
+.menu-bar .btn-menu:checked~.menu {
     max-height: 240px;
 }
 
 /*styler burgermenuen til at være et X når den er åben*/
 
-.menu-bar .btn-menu:checked ~ .menu-icon .nav-icon{
-    background:transparent;
+.menu-bar .btn-menu:checked~.menu-icon .nav-icon {
+    background: transparent;
 }
 
-.menu-bar .btn-menu:checked ~ .menu-icon .nav-icon:before{
+.menu-bar .btn-menu:checked~.menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 }
 
-.menu-bar .btn-menu:checked ~ .menu-icon .nav-icon:after{
+.menu-bar .btn-menu:checked~.menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 }
 
 /*logo*/
 
-.menu-bar .logoR{
+.menu-bar .logoR {
     display: block;
-    float: left;
 }
 
 /*styling af om mig side*/
-.mig{
+.mig {
     background-image: url(./images/mig.jpeg);
     background-size: cover;
     height: 400px;
     width: 300px;
     margin-left: 40px;
     margin-top: 40px;
+    align-items: center;
 }
 
-.intro{
+.intro {
     background: var(--brand-primary);
     padding: 30px;
     margin-top: 40px;
@@ -155,7 +160,7 @@ a{
     font-family: khand, sans-serif;
 }
 
-.introtekst{
+.introtekst {
     padding: 30px;
     padding-bottom: 0;
     font-family: Raleway, sans-serif, regular;
@@ -167,13 +172,13 @@ a{
     padding: 30px;
 }
 
-.kontakt h2{
+.kontakt h2 {
     text-align: center;
     margin-bottom: 1.02rem;
     font-family: khand, sans-serif, medium;
 }
 
-.telefon{
+.telefon {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
@@ -182,43 +187,69 @@ a{
 .mail {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.kontakt p{
+.kontakt p {
     padding-left: 15px;
     font-family: raleway, sans-serif, regular;
 }
 
-.infotekst{
+.infotekst {
     display: block;
     background-color: var(--brand-secondary);
-    margin: 30px; 
+    margin: 30px;
     padding: 15px;
     margin-top: 0;
-    box-shadow: 1px 1px 10px var(--brand-quaternary);   
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
 }
 
-.infotekst h2{
+.infotekst h2 {
     font-family: khand, sans-serif, medium;
 }
 
-.infotekst p{
+.infotekst p {
     font-family: Raleway, sans-serif, Regular;
 }
 
 /*styling af projektside starter her*/
 
-.projekter{
+.projekter {
+    font-family: Khand, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*
+.linje{
     font-family: Khand, sans-serif;
     font-weight: 500;
     font-size: 20px;
 }
 
-.projekter img{
+.linje a {
+    color: var(--brand-quaternary);
+    text-align: center;
+}
+*/
+
+.projekter img {
     margin-bottom: 30px;
 }
 
+.rum {
+    box-shadow: 1px 1px 10px var(--brand-quaternary);
+    padding: 20px;
+    margin: 30px;
+
+}
+
+/*
 .rumrejse{
     box-shadow: 1px 1px 10px var(--brand-quaternary);
     padding: 20px;
@@ -250,18 +281,19 @@ a{
     margin: 30px; 
 }
 
-.swing img{
-    margin-bottom:5px;
-}
 
 .video{
     box-shadow: 1px 1px 10px var(--brand-quaternary);
     padding: 20px;
     margin: 30px; 
+} */
+
+.swing img {
+    margin-bottom: 5px;
 }
 
 
-.btn-projekter{
+.btn-projekter {
     background-color: var(--brand-secondary);
     border: solid 1px var(--brand-tertiary);
     text-decoration: none;
@@ -275,50 +307,51 @@ a{
     margin-right: 60px;
 }
 
-.projekter a{
-    color:var(--brand-quaternary);
+.projekter a {
+    color: var(--brand-quaternary);
     text-align: center;
 }
+
 /*styling af projektside slutter her*/
 
 /*styling af alle projektsiderne starter her*/
 
 /*rumrejsen*/
-.rum-billede{
+.rum-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.rumtekst{
+.rumtekst {
     padding: 20px;
     margin-top: 0%;
     font-family: Raleway, sans-serif;
 }
 
 /*de swingende sko */
-.swing-billede{
+.swing-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 
-.swingtekst{
+.swingtekst {
     padding: 20px;
     margin-top: 0%;
     font-family: Raleway, sans-serif;
 }
 
 /*Rhytme Studio*/
-.rhythm-billede{
+.rhythm-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 }
 
-.rhythmtekst{
+.rhythmtekst {
     padding: 20px;
     margin-top: 0%;
     font-family: Raleway, sans-serif;
@@ -326,41 +359,41 @@ a{
 
 /*styling af goeasy del1*/
 
-.fgoeasy-billede{
+.fgoeasy-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 }
 
-.fgoeasytekst{
+.fgoeasytekst {
     padding: 20px;
     font-family: Raleway, sans-serif;
 }
 
 /*goeasy del 2*/
-.agoeasy-billede{
+.agoeasy-billede {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 }
 
-.agoeasytekst{
+.agoeasytekst {
     padding: 20px;
     font-family: Raleway, sans-serif;
 }
 
 /*styling af video*/
 
-.videobillede{
+.videobillede {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 }
 
-.link{
+.link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -379,24 +412,29 @@ a{
     border-radius: 5px;
 }
 
-.videotekst{
+.videotekst {
     padding: 20px;
     font-family: Raleway, sans-serif;
+}
+
+.videosamlet{
+    display: flex;
+    flex-direction: column;
 }
 
 
 /*footer*/
 
-footer{
-    background-color:var(--brand-primary);
+footer {
+    background-color: var(--brand-primary);
     padding: 2px;
     margin-top: 20px;
     text-align: center;
     font-family: Raleway, sans-serif;
 }
 
-.footvideo{
-    background-color:var(--brand-primary);
+.footvideo {
+    background-color: var(--brand-primary);
     padding: 2px;
     margin-top: 70px;
     text-align: center;
@@ -405,24 +443,185 @@ footer{
 
 /*media queries starter her*/
 
-/*menuen*/
 
-@media (min-width:667px){
-    .menu-bar li{
+@media (min-width:1024px) {
+
+    /*menubaren stylet i media*/
+    .menu-bar li {
         float: left;
     }
 
-    .menu-bar li a{
+    .menu-bar li a {
         padding: 20px 30px;
     }
 
-    .menu-bar .menu{
+    .menu-bar .menu {
         clear: none;
         float: right;
         max-height: none;
     }
 
-    .menu-bar .menu-icon{
+    .menu-bar .menu-icon {
         display: none;
     }
+
+    .menu-bar ul a {
+        padding: 20px;
+        font-weight: 50;
+        font-size: 10px;
+    }
+
+    /*om mig siden stylet til media - billede, tekst*/
+    .mig {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .infotekst {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .kontakt {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    /*projektside bokse rundt om billede og knap*/
+
+    .projekter {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    /*projekt siden knapper og billede styling i media*/
+    .rum {
+        margin: 10px;
+        min-height: 400px;
+        min-width: 300px;
+    }
+
+    .alt {
+        width: 300px;
+        height: 300px;
+    }
+
+    .rejse {
+        width: 300px;
+        height: 300px;
+    }
+
+    /*rumrejsen studio billed og tekst justeret til media*/
+    .rumsamlet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .rumtekst {
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    /*swing billed og tekst justeret til media*/
+    .swingsamlet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+
+    .swingtekst {
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    .swing-billede{
+        padding: 50px;
+    }
+
+    /*rhythm studio billed og tekst justeret til media*/
+    .rhythm-samlet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .rhythmtekst {
+        padding: 50px;
+        margin-top: 50px;
+    }
+
+    /*GOEASY del 1  billed og tekst justeret til media*/
+    .easysamlet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .fgoeasytekst {
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .fgoeasy-billede{
+        padding: 70px;
+        width: 35%;
+    }
+
+    /*GOEASY del 2  billed og tekst justeret til media*/
+    .gosamlet {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .agoeasytekst {
+        padding: 30px;
+        margin-top: 140px;
+    }
+
+    .agoeasy-billede{
+        padding: 20px;
+        width: 500px;
+    }
+
+    /*video billed, link og tekst justeret til media*/
+    .videosamlet{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .vid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 50px;
+    }
+
+    .videotekst {
+        padding: 30px;
+        margin-top: 70px;
+    }
+
+    .videobillede{
+        padding-top: 70px;
+        width: 80%;
+    }
+     
+    /*footer*/
+    footer{
+        margin-top: 150px;
+    }
+
+    .footvideo{
+        margin-top: 210px;
+    }
+
+
 }
