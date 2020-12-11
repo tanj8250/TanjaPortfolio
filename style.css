@@ -151,10 +151,16 @@ a {
     background-size: cover;
     height: 400px;
     width: 300px;
-    margin-left: 40px;
     margin-top: 40px;
-    align-items: center;
 }
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /*billede tekst*/
 .intro {
